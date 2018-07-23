@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/mpg', method = ['GET'])
+@app.route('/mpg', methods = ['GET'])
 def mpg():
     return render_template('mpg.html')
 

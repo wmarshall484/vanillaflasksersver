@@ -9,6 +9,10 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
+@app.route('/mpg', method = ['GET'])
+def mpg():
+    return render_template('mpg.html')
+
 #When run from command line, start the server
 if __name__ == '__main__':
     app.run(host ='0.0.0.0', port = 3333, debug = True)
